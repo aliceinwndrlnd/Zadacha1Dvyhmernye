@@ -28,10 +28,10 @@ public class Main {
         /*1)Поcчитать сумму четных элементов стоящих на главной диагонали.*/
         int summ = 0;
         for (int i = 0; i < array.length; i++) {
-            for (int j= 0; j < array.length; j++) {
-                if (array[i][j] % 2 == 0)
-                {
-                    summ += array [i][j];
+            for (int j = i; j < array.length; j++) {
+                if (array[i][j] % 2 == 0){
+                summ += array [i][j];
+                break;
                 }
             }
         }
